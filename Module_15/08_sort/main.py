@@ -15,3 +15,6 @@ selection_sort(number)
 print('Отредатированный список:', number)
 
 
+
+    
+
