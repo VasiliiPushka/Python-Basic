@@ -1,0 +1,3 @@
+skates = []
+peoples = []
+

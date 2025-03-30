@@ -1,4 +1,6 @@
-def is_polindrome(num_list):
+import random
+
+def is_palindrome(num_list):
     reverse_list = []
     for i_num in range(len(num_list) -1, -1, -1):
         reverse_list.append(num_list[i_num])
@@ -9,8 +11,8 @@ def is_polindrome(num_list):
 
 nums = []
 n = int(input('Сколько чисел в последовательности? '))
-for i in range(n):
-    nums.append(i)
+for _ in range(n):
+    nums.append(random.randint(1, n))
 
 new_nums = []
 answer = []
@@ -19,7 +21,7 @@ answer = []
 for i_nums in range(0,len(nums)):
     for j_elem in range(i_nums, len(nums)):
         new_nums.append(nums[j_elem])
-    if is_polindrome(new_nums):
+    if is_palindrome(new_nums):
         for i_answer in range(0, i_nums):
             answer.append(nums[i_answer])
         answer.reverse()
