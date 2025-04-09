@@ -1,0 +1,6 @@
+menu = input("Введите меню через ';': ")
+menu_list = menu.split(';')
+old_menu = ';'.join(menu_list)
+print('Доступное меню:', old_menu)
+new_menu = ', '.join(menu_list)
+print('На данный момент в меню есть:', new_menu)
