@@ -12,17 +12,13 @@ def validation_string(string:str):
 
         return True
 
-    except NameError:
-        print('Поле «Имя» содержит НЕ только буквы:')
+    except NameError ('Поле «Имя» содержит НЕ только буквы:'):
         return False
-    except ValueError:
-        print('Возраст» НЕ является числом от 10 до 99')
+    except ValueError ('Возраст» НЕ является числом от 10 до 99'):
         return False
-    except SyntaxError:
-        print('«Имейл» НЕ содержит @ и . (точку)')
+    except SyntaxError ('«Имейл» НЕ содержит @ и . (точку)'):
         return False
-    except IndexError:
-        print('НЕ присутствуют все три поля: IndexError')
+    except IndexError ('НЕ присутствуют все три поля: IndexError'):
         return False
 
 
