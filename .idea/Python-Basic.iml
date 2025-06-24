@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.venv/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/Telegramm_bot/my_first_bot/.venv/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/Telegramm_bot/my_first_bot/.venv/include" />
+      <excludeFolder url="file://$MODULE_DIR$/Telegramm_bot/my_first_bot/.venv/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/Telegramm_bot/test_kinopoisk_bot_api/venv/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/Telegramm_bot/test_kinopoisk_bot_api/venv/include" />
+      <excludeFolder url="file://$MODULE_DIR$/Telegramm_bot/test_kinopoisk_bot_api/venv/lib" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.13 (Python-Basic)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
