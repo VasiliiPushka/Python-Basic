@@ -12,7 +12,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Telegramm_bot/test_kinopoisk_bot_api/venv/include" />
       <excludeFolder url="file://$MODULE_DIR$/Telegramm_bot/test_kinopoisk_bot_api/venv/lib" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (Python-Basic)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.13 (python_basic_diploma)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

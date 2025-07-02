@@ -10,7 +10,9 @@ def api_requests(endpoint: str, params: {}) -> requests.Response:
 
 
 def movie_search_id(movie_id: str) -> Optional[Dict]:
+
     """Функция для поиска фильмов и сериалов по id"""
+
     try:
         response = api_requests("movie", params={"id": movie_id})
         response.raise_for_status()
@@ -18,3 +20,27 @@ def movie_search_id(movie_id: str) -> Optional[Dict]:
     except requests.exceptions.RequestException as e:
         print(f"Ошибка при запросе к api: {e}")
         return None
+
+
+def movie_search(page:int, limit: int, query: str) -> Optional[Dict]:
+
+    """  Функция для поиска фильма по названию"""
+
+    if not query.strip():
+        print("Ошибка. Название фильма не может быть пустым")
+        return None
+
+    if page < 1 or limit < 1:
+        print("Ошибка. Значение limit и page должны быть положительными числами")
+        return None
+
+    try:
+        response = api_requests("movie/search", params={"page": page, "limit":limit, "query": query})
+        response.raise_for_status()
+        return response.json()
+
+    except requests.exceptions.RequestException as e:
+        print(f"Ошибка при запросе к API: {e}")
+        return None
+
+
