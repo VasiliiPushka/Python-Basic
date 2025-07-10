@@ -14,10 +14,10 @@ class BaseModel(Model):
 
 
 class User(BaseModel):
-    telegram_id = IntegerField(unique=True)
+    user_id = IntegerField(unique=True)
     username = CharField(null=True)
     first_name = CharField()
-    last_name = CharField()
+    last_name = CharField(null=True)
     registration_date = DateTimeField(default=datetime.now())
 
 
@@ -25,7 +25,8 @@ class Movie(BaseModel):
     api_id = IntegerField(unique=True)
     title = CharField()
     description = TextField(null=True)
-    rating = FloatField(null=True)
+    rating_kp = FloatField(null=True)
+    rating_imdb = FloatField(null=True)
     year = IntegerField(null=True)
     age_rating = IntegerField(null=True)
     budget = IntegerField(null=True)
@@ -49,5 +50,3 @@ class SearchHistory(BaseModel):
     search_date = DateTimeField(default=datetime.now())
     created_at = DateTimeField(default=datetime.now())
 
-
-db.create_tables(BaseModel.__subclasses__())

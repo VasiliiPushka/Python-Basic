@@ -5,3 +5,9 @@ class States(StatesGroup):
     base = State()
     id = State()
     name = State()
+
+class MovieStates(StatesGroup):
+    query = State()
+    page = State()
+    limit = State()
+
